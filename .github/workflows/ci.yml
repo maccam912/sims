@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.event.merge_group.head_sha || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Syntax and tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Godot
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.6.2
+          use-dotnet: false
+
+      - name: Check shell script syntax
+        run: bash -n tools/*.sh
+
+      - name: Check Python script syntax
+        run: python3 -m compileall -q tools
+
+      - name: Check Godot project syntax
+        shell: bash
+        run: |
+          set -o pipefail
+          log="$(mktemp)"
+          godot --headless --editor --quit --path . 2>&1 | tee "$log"
+
+          if grep -Eq 'SCRIPT ERROR:|Parse Error:|Failed to load script' "$log"; then
+            echo "::error::Godot reported a script syntax or compilation error."
+            exit 1
+          fi
+
+      - name: Run tests
+        run: tools/test.sh
