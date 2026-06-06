@@ -41,8 +41,8 @@ jobs:
           log="$(mktemp)"
           godot --headless --editor --quit --path . 2>&1 | tee "$log"
 
-          if grep -Eq 'SCRIPT ERROR:|Parse Error:|Failed to load script' "$log"; then
-            echo "::error::Godot reported a script syntax or compilation error."
+          if grep -Eq '^ERROR:|SCRIPT ERROR:|Parse Error:|Failed to load script' "$log"; then
+            echo "::error::Godot reported an import, syntax, or compilation error."
             exit 1
           fi
 
