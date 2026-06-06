@@ -1,0 +1,38 @@
+[
+  {
+    "type": "furniture",
+    "id": "core.plant",
+    "name": "Potted Plant",
+    "category": "decor",
+    "price": 45,
+    "mesh": "res://assets/furniture/pottedPlant.glb",
+    "size": [1, 1]
+  },
+  {
+    "type": "furniture",
+    "id": "core.floor_lamp",
+    "name": "Floor Lamp",
+    "category": "decor",
+    "price": 60,
+    "mesh": "res://assets/furniture/lampRoundFloor.glb",
+    "size": [1, 1]
+  },
+  {
+    "type": "furniture",
+    "id": "core.rug",
+    "name": "Square Rug",
+    "category": "decor",
+    "price": 40,
+    "mesh": "res://assets/furniture/rugSquare.glb",
+    "size": [2, 2]
+  },
+  {
+    "type": "furniture",
+    "id": "core.side_table",
+    "name": "Side Table",
+    "category": "decor",
+    "price": 55,
+    "mesh": "res://assets/furniture/sideTable.glb",
+    "size": [1, 1]
+  }
+]

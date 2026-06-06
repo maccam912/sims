@@ -1,0 +1,54 @@
+[
+  {
+    "type": "furniture",
+    "id": "core.toilet",
+    "name": "Toilet",
+    "category": "bathroom",
+    "price": 120,
+    "mesh": "res://assets/furniture/toilet.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "use", "name": "Use Toilet", "duration": 10,
+        "gains": { "bladder": 9.0 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.shower",
+    "name": "Shower",
+    "category": "bathroom",
+    "price": 250,
+    "mesh": "res://assets/furniture/shower.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "shower", "name": "Take a Shower", "duration": 20,
+        "gains": { "hygiene": 3.5 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.bathtub",
+    "name": "Bathtub",
+    "category": "bathroom",
+    "price": 380,
+    "mesh": "res://assets/furniture/bathtub.glb",
+    "size": [1, 2],
+    "interactions": [
+      { "id": "bathe", "name": "Take a Bath", "duration": 40,
+        "gains": { "hygiene": 2.0, "comfort": 0.4 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.sink",
+    "name": "Bathroom Sink",
+    "category": "bathroom",
+    "price": 90,
+    "mesh": "res://assets/furniture/bathroomSink.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "wash", "name": "Wash Up", "duration": 8,
+        "gains": { "hygiene": 1.2 } }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+[
+  { "type": "floor", "id": "core.floor_wood",     "name": "Wood Planks",   "price": 5, "color": "#b5803f" },
+  { "type": "floor", "id": "core.floor_tile",     "name": "Ceramic Tile",  "price": 6, "color": "#d8d8d2" },
+  { "type": "floor", "id": "core.floor_carpet",   "name": "Blue Carpet",   "price": 4, "color": "#5f7aa0" },
+  { "type": "floor", "id": "core.floor_concrete", "name": "Concrete",      "price": 2, "color": "#8a8a8a" },
+  { "type": "floor", "id": "core.floor_generic",  "name": "Generic Floor", "price": 1, "color": "#9aa0a6" }
+]

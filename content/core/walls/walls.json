@@ -1,0 +1,7 @@
+[
+  { "type": "wall", "id": "core.wall_drywall", "name": "Drywall",      "price": 10, "color": "#ece7da" },
+  { "type": "wall", "id": "core.wall_brick",   "name": "Red Brick",    "price": 16, "color": "#9c5b46" },
+  { "type": "wall", "id": "core.wall_blue",    "name": "Blue Paint",   "price": 12, "color": "#6f93c4" },
+  { "type": "wall", "id": "core.wall_green",   "name": "Sage Paint",   "price": 12, "color": "#8aa88a" },
+  { "type": "wall", "id": "core.wall_generic", "name": "Generic Wall", "price": 8,  "color": "#cfcfcf" }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "furniture",
+    "id": "example_mod.gold_throne",
+    "name": "Gold Throne (Modded!)",
+    "category": "comfort",
+    "price": 9999,
+    "mesh": "res://assets/furniture/loungeDesignChair.glb",
+    "color": "#ffcc33",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "rule", "name": "Sit and Rule", "duration": 60,
+        "gains": { "comfort": 0.8, "fun": 0.4, "social": 0.2 } }
+    ]
+  },
+  {
+    "type": "floor",
+    "id": "example_mod.floor_gold",
+    "name": "Gold Floor (Modded!)",
+    "price": 500,
+    "color": "#e8c14a"
+  },
+  {
+    "type": "wall",
+    "id": "example_mod.wall_purple",
+    "name": "Royal Purple (Modded!)",
+    "price": 50,
+    "color": "#7b4fa0"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "furniture",
+    "id": "core.tv",
+    "name": "Flatscreen TV",
+    "category": "electronics",
+    "price": 500,
+    "mesh": "res://assets/furniture/televisionModern.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "watch", "name": "Watch TV", "duration": 60,
+        "gains": { "fun": 0.6, "comfort": 0.1 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.desk",
+    "name": "Computer Desk",
+    "category": "electronics",
+    "price": 300,
+    "mesh": "res://assets/furniture/desk.glb",
+    "size": [2, 1],
+    "interactions": [
+      { "id": "browse", "name": "Browse the Web", "duration": 45,
+        "gains": { "fun": 0.5, "social": 0.2 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.bookcase",
+    "name": "Bookcase",
+    "category": "electronics",
+    "price": 260,
+    "mesh": "res://assets/furniture/bookcaseOpen.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "read", "name": "Read a Book", "duration": 50,
+        "gains": { "fun": 0.4 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.radio",
+    "name": "Radio",
+    "category": "electronics",
+    "price": 80,
+    "mesh": "res://assets/furniture/radio.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "listen", "name": "Listen to Music", "duration": 30,
+        "gains": { "fun": 0.35 } }
+    ]
+  }
+]

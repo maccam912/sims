@@ -1,0 +1,7 @@
+{
+  "id": "example_mod",
+  "name": "Example Community Mod",
+  "author": "you!",
+  "version": "1.0.0",
+  "description": "A template mod. Copy this folder, rename it, and edit the JSON files to add your own furniture, floors and walls. See docs/MODDING.md."
+}

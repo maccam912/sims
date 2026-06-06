@@ -1,0 +1,8 @@
+{
+  "id": "core",
+  "name": "Core Content",
+  "author": "Sims clone foundation",
+  "version": "0.1.0",
+  "description": "Built-in furniture, floors and walls using Kenney's Furniture Kit (CC0).",
+  "game_version": ">=0.1.0"
+}

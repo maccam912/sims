@@ -1,0 +1,50 @@
+[
+  {
+    "type": "furniture",
+    "id": "core.fridge",
+    "name": "Refrigerator",
+    "category": "kitchen",
+    "price": 600,
+    "mesh": "res://assets/furniture/kitchenFridge.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "snack", "name": "Grab a Snack", "duration": 20,
+        "gains": { "hunger": 1.2 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.stove",
+    "name": "Stove",
+    "category": "kitchen",
+    "price": 400,
+    "mesh": "res://assets/furniture/kitchenStove.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "cook", "name": "Cook a Meal", "duration": 45,
+        "gains": { "hunger": 2.0, "fun": 0.05 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.counter",
+    "name": "Kitchen Counter",
+    "category": "kitchen",
+    "price": 180,
+    "mesh": "res://assets/furniture/kitchenCabinet.glb",
+    "size": [1, 1]
+  },
+  {
+    "type": "furniture",
+    "id": "core.dining_table",
+    "name": "Dining Table",
+    "category": "kitchen",
+    "price": 220,
+    "mesh": "res://assets/furniture/table.glb",
+    "size": [2, 1],
+    "interactions": [
+      { "id": "eat", "name": "Eat", "duration": 30,
+        "gains": { "hunger": 0.8, "social": 0.2 } }
+    ]
+  }
+]

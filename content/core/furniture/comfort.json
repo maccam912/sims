@@ -1,0 +1,69 @@
+[
+  {
+    "type": "furniture",
+    "id": "core.bed_single",
+    "name": "Thrifty Single Bed",
+    "category": "comfort",
+    "price": 200,
+    "mesh": "res://assets/furniture/bedSingle.glb",
+    "size": [1, 2],
+    "interactions": [
+      { "id": "sleep", "name": "Sleep", "duration": 420, "slot": [0, 1],
+        "gains": { "energy": 0.22, "comfort": 0.05 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.bed_double",
+    "name": "Cozy Double Bed",
+    "category": "comfort",
+    "price": 450,
+    "mesh": "res://assets/furniture/bedDouble.glb",
+    "size": [2, 2],
+    "interactions": [
+      { "id": "sleep", "name": "Sleep", "duration": 420, "slot": [0, 1],
+        "gains": { "energy": 0.26, "comfort": 0.08 } },
+      { "id": "relax", "name": "Relax", "duration": 60,
+        "gains": { "comfort": 0.4, "fun": 0.1 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.sofa",
+    "name": "Lounge Sofa",
+    "category": "comfort",
+    "price": 320,
+    "mesh": "res://assets/furniture/loungeSofa.glb",
+    "size": [2, 1],
+    "interactions": [
+      { "id": "sit", "name": "Sit", "duration": 60,
+        "gains": { "comfort": 0.5, "fun": 0.1, "social": 0.05 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.lounge_chair",
+    "name": "Lounge Chair",
+    "category": "comfort",
+    "price": 140,
+    "mesh": "res://assets/furniture/loungeChair.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "sit", "name": "Sit", "duration": 60,
+        "gains": { "comfort": 0.45, "fun": 0.05 } }
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "core.dining_chair",
+    "name": "Dining Chair",
+    "category": "comfort",
+    "price": 45,
+    "mesh": "res://assets/furniture/chair.glb",
+    "size": [1, 1],
+    "interactions": [
+      { "id": "sit", "name": "Sit", "duration": 30,
+        "gains": { "comfort": 0.3 } }
+    ]
+  }
+]
